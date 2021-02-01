@@ -1,0 +1,26 @@
+{
+  "name": "AwasthiAndSons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite ",
+    "start-server": "node server.js",
+    "start-app": "npm run lite && npm run start-server",
+    "lite": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.5.3",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "lite-server": "^2.6.1",
+    "popper.js": "^1.16.1"
+  },
+  "dependencies": {
+    "nodemailer": "^6.4.17"
+  }
+}
