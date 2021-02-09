@@ -102,11 +102,11 @@
                                 
                                 <div class="row pt-2  w-sm-75 ">
                                   <div class="col-12 col-sm-6">
-                                    <div data-toggle="modal" data-target="#selectbrandmodal"  class="btn rounded-pill custom-select poppins shadow">Select Brand</div>
+                                    <div id="car-brand" data-toggle="modal" data-target="#selectbrandmodal"  class="btn rounded-pill custom-select select-header poppins shadow car-brand">Select Brand</div>
                                   </div>
-                                  <div class="col-12 my-3 mt-sm-0 col-sm-6"><div data-toggle="modal" data-target="#selectbrandmodal" class="btn rounded-pill custom-select poppins shadow">Select Car</div>
+                                  <div class="col-12 my-3 mt-sm-0 col-sm-6"><div id="car-model" data-toggle="modal" data-target="#selectbrandmodal" class="btn rounded-pill custom-select select-header poppins shadow car-model">Select Car</div>
                                 </div>
-                                <div class="col-12  mt-sm-0"><button class="btn btn-yellow w-100 rounded-pill poppins shadow">View All Services  <i class="fa fa-gear"></i></button>
+                                <div class="col-12  mb-2"><button class="btn btn-yellow w-100 rounded-pill poppins shadow">View All Services  <i class="fa fa-gear"></i></button>
                                 </div>
                                 </div>
                             
@@ -124,55 +124,34 @@
 <div class="container p-0">
 <div class="row row-content py-0 pb-4 shadow justify-content-center">
   <div class="col-12 m-0 p-0  top-border"></div>
-  <div class="col-12 ">
-  <h1 class="ml1 text-center">
-  <span class="text-wrapper">
-    <span id="event-title" class="letters jack-frost font-weight-bold text-uppercase">
-       <span class="grey-black letter">B</span>
-       <span class="grey-dark letter">h</span>
-       <span class="grey-light letter">o</span>
-       <span class="yellow letter">p</span>
-       <span  class="grey-black letter ">a</span>
-       <span class="grey-dark letter">l </span>
-       <span class="grey-light letter"> &nbsp;  </span>
-       <span class="yellow letter"> H</span>
-       <span class="grey-black letter">a</span>
-       <span class="grey-dark letter">c</span>
-       <span class="grey-light letter">k</span>
-       <span class="yellow letter">s</span>
-    </span>
-  </span>
-</h1>
-<h6 style="letter-spacing: 3px;" class="text-center"><span class="highlight raleway text-uppercase">Mark The Dates</span></h6>
-<h1 class="text-center"><span class="highlight marker">1 - 6 May 2021</span></h1>
-  </div>
-  <div class="col-12 col-md-10 col-lg-8 text-center">
-    <div class="row marker my-4">
-  <div class="col-3">
-    <div class="countdown-item" id="day">na</div>
-  </div>
-  <div class="col-3">
-    <div class="countdown-item" id="hour">na</div>
-  </div>
-  <div class="col-3">
-    <div class="countdown-item" id="minute">na</div>
-  </div>
-  <div class="col-3">
-    <div class="countdown-item" id="second">na</div>
-  </div>
-</div>
-  </div>
 <div class="col-12 mt-4 text-center">
-  
-  <a href="https://my.mlh.io/oauth/authorize?client_id=rAUPJGA7JmxSu4Svf90q-BGV7v5N5SEaoesw83kdeno&redirect_uri=Https://bhopalhacks.com&response_type=token" class=" btn-brush">
-    <img src="assets/images/white-border.png" height="80" width="250" class="">
-    <h3 class="text-center"><span class="marker">Register Here <i class="fa fa-arrow-circle-right"></i></span></h3>
-
-  </a>
-  
+   <h1 class="text-center poppins font-weight-bold mb-2">Select Your <span class="text-blue-dark"> Car</span>  Model</h1>
+</div>
+<div class="col-2 d-none d-md-inline-block">
+  <img class="img-fluid" src="assets/images/car-repair.png">
+</div>
+<div class="col-md-8">
+  <div class="row">
+    <div class="col-12 col-sm-6">
+                                    <div id="car-brand" data-toggle="modal" data-target="#selectbrandmodal"  class="btn rounded-pill custom-select select-body poppins shadow car-brand">Select Brand</div>
+                                  </div>
+                                  <div id="car-model" class="col-12 my-3 mt-sm-0 col-sm-6"><div data-toggle="modal" data-target="#selectbrandmodal" class="btn rounded-pill custom-select select-body poppins shadow car-model">Select Car</div>
+                                </div>
+                                <div class="col-12  mb-2"><input placeholder="Enter Mobile Number" type="text" name="phone" class="btn btn-blue w-100 rounded-pill poppins shadow"/>
+                                  <span class=" text-yellow-light poppins input-call-icon"><i class="fa fa-phone-alt"> </i>+91 </span>
+                                </div>
+                                <div class="col-12  my-2"><button class="btn btn-yellow-alt w-100 rounded-pill poppins shadow">View All Services  <i class="fa fa-gear"></i></button>
+                                </div>
+  </div>
+</div>
+<div class="col-2 d-none d-md-inline-block">
+  <img class="img-fluid" src="assets/images/car-painting.png">
+</div>
+<div class="col-12 text-center">
+  <img src="assets/images/car-service.jpg" class="img-fluid d-md-none">
 </div>
 </div>
-<hr class="bg-multicolor-diagonal divider w-75">
+<!-- <hr class="bg-multicolor-diagonal divider w-75">
 <div class="row row-content py-4 shadow justify-content-center">
  <div class="col-12">
    <h1 class="text-center poppins font-weight-bold mb-2">About Bhopal <span class="yellow">Hacks</span></h1>
@@ -188,7 +167,8 @@ This 5-day event will be held for the first time Digitally . From May 1st to 6th
   </div>
 </div>
  </div>
-</div>
+</div> -->
+<div class="row-content"></div>
 </div>
 
 <footer  class="footer ">
@@ -234,6 +214,7 @@ This 5-day event will be held for the first time Digitally . From May 1st to 6th
 
     </div>
   </div>
+  <a href='https://www.freepik.com/vectors/car'>Car vector created by pch.vector - www.freepik.com</a>
  </footer>
 
 </body>
