@@ -419,9 +419,8 @@ border-color:  #ffdf6c ;
 }
 .btn-blue:focus
 {
-    /*background-color: #606dbc;
+    outline:1px #ffdf6c;
     color: #ffdf6c;
-    border-color: #ffdf6c;*/
 }
 .hh-form input
 { 
