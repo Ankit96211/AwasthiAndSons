@@ -196,7 +196,11 @@ background: #4885ed;
 }
 .text-yellow
 {
-  color: #fda50f !important;
+  color: #f4c20d !important;
+}
+.text-yellow-light
+{
+  color: #ffdf6c !important;
 }
 .text-green
 {
@@ -238,14 +242,14 @@ background: #4885ed;
 {
   background-color: #fda50f !important;
 }
-.bg-green
+/*.bg-green
 {
   background-color: #3cba54 !important;
 }
 .bg-blue
 {
   background-color: #4885ed !important;
-}
+}*/
 .btn-social-icon
 {
   color: #111 !important;
@@ -364,15 +368,17 @@ text-decoration: none;
 }
 .btn-yellow
 {
- border-color:  #fda50f !important;
- color: #fda50f !important;
- background-color: #202020 !important;
- transition: 0.4s !important;
+ border-color:  #ffdf6c ;
+ color: #465298 ;
+ background-color: #ffdf6c ;
+ transition: 0.4s ;
+ font-weight: 500;
+ font-size: 18px;
 }
 .btn-yellow:hover
 {
-    background-color: #fda50f !important;
-    color: #3f3f3f !important;
+    background-color: transparent;
+    color: #ffdf6c ;
 }
 .btn-yellow-alt
 {
@@ -715,9 +721,85 @@ color: #202020;
 }
 .bottom-border
 {
-  height: 35px;
+  height: 50px;
   width: 100%;
   background-image: url('../assets/images/bottom-border.png');
   background-size: contain;
   background-repeat: repeat-x;
+position: relative;
+bottom: -10px;
+}
+tr:hover
+{
+  background-color: #ffdf6c !important;
+}
+.custom-select
+{
+height: 40pt;
+font-size: 20px;
+padding: 10px 0px;
+background-color: transparent;
+border-color: #ffdf6c;
+color: #ffdf6c;
+font-weight: 600;
+transition: 0.3s;
+}
+.custom-select:hover
+{
+  background-color:#ffdf6c ;
+  border-color: #606dbc;
+  color: #606dbc;
+}
+..button-pill
+{
+
+}
+.bg-blue
+{
+background-color: #606dbc;
+}
+.select-modal
+{
+   
+}
+.select-modal .modal-body
+{
+  max-height:500px !important;
+  overflow-y: auto;
+}
+.select-modal .modal-body::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+
+}
+
+.select-modal .modal-body::-webkit-scrollbar
+{
+  width: 10px;
+  background-color: #F5F5F5;
+
+}
+
+.select-modal .modal-body::-webkit-scrollbar-thumb
+{
+  border-radius: 50px !important;
+  background-color: #606dbc; 
+  background-image: -webkit-linear-gradient(45deg,
+                                            rgba(255, 255, 255, .2) 25%,
+                        transparent 25%,
+                        transparent 50%,
+                        rgba(255, 255, 255, .2) 50%,
+                        rgba(255, 255, 255, .2) 75%,
+                        transparent 75%,
+                        transparent)
+}
+.brand-col:hover .brands
+{
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(1.1);
+  border: 1px solid #606dbc !important;
+  color: #606dbc;
+ 
 }
