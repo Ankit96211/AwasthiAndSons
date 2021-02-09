@@ -10,7 +10,7 @@ $(document).ready(function(){
     });
 });
   for (var i = 0; i<52; i++){
-    $('#brand-row').append('<div class="col-4 col-sm-3 brand-col  p-2" setval="'+i+ '" ><div class="brands border rounded text-center"><img class=" p-2 img-fluid" src="assets/brands/audi.png"><h6>Audi</h6></div></div>');
+    $('#brand-row').append('<div class="col-4 col-sm-3 brand-col  p-2" setval="'+i+ '" ><div class="brands border rounded text-center"><img class=" p-2 img-fluid" src="assets/brands/Audi.png"><h6>Audi</h6></div></div>');
   }
 
   for (var i = 0; i<50; i++){
