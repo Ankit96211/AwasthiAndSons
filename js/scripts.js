@@ -1,13 +1,25 @@
 $(document).ready(function(){
+	var brand=null;
+	var model=null;
+	$('.car-model').click(function(){
+      if(brand!=null)
+      {
+      	$('#selectcarmodal').modal("show");
+      }
+      else
+      {
+      	$('#selectbrandmodal').modal('show');
+      }
+	});
 	$('.brand-col').click(function () {
 		$('#selectbrandmodal').modal("hide");
 		$('#selectcarmodal').modal("show");
-        var brand = $(this).attr('setval') ;
+        brand = $(this).attr('setval') ;
         $('.car-brand').text(brand);
     });
     $('.model-col').click(function () {
 		$('#selectcarmodal').modal("hide");
-        var model = $(this).attr('setval') ;
+        model = $(this).attr('setval') ;
         $('.car-model').text(model);
     })
     $('#selectmodalback').click(function(){

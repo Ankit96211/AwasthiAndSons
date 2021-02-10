@@ -743,7 +743,7 @@ color: #202020;
 .top-border
 {
   height: 100px;
-  background-image: url('../assets/images/top-border.png');
+  background-image: url('../assets/images/top-border-alt.png');
   background-size: contain;
   background-repeat: repeat-x;
 }
@@ -837,6 +837,24 @@ background-color: #606dbc;
   cursor: pointer;
   transition: 0.3s;
   transform: scale(1.1);
+  border: 1px solid #606dbc !important;
+  color: #606dbc;
+ 
+}
+.model-col:hover .models
+{
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(1.1);
+  border: 1px solid #606dbc !important;
+  color: #606dbc;
+ 
+}
+.repair-icons:hover .repair-icon
+{
+   cursor: pointer;
+  transition: 0.3s;
+  transform: scale(1.05);
   border: 1px solid #606dbc !important;
   color: #606dbc;
  
