@@ -866,3 +866,14 @@ background-color: #606dbc;
   top: 50%;
   transform: translateY(-50%);
 }
+.car-animate {
+  position: relative;
+  animation: left-right-move 7s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes left-right-move {
+  0% {left: 0%;}
+    50%  {left: 100%;transform: translateX(-100%);}
+  100% { left: 0%;}
+}

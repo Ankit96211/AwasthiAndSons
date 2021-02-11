@@ -19,6 +19,7 @@ $(document).ready(function(){
     });
     $('.model-col').click(function () {
 		$('#selectcarmodal').modal("hide");
+        $('.car-animate').toggleClass("d-none");
         model = $(this).attr('setval') ;
         $('.car-model').text(model);
     })
