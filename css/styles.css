@@ -877,3 +877,27 @@ background-color: #606dbc;
     50%  {left: 100%;transform: translateX(-100%);}
   100% { left: 0%;}
 }
+.fade-scroll
+{
+  opacity: 0;
+}
+.left-right-fade
+{
+  position: relative;
+  animation: lefttoright 1s 1;
+  animation-direction: alternate;
+}
+.right-left-fade
+{
+  position: relative;
+  animation: righttoleft 1s 1;
+  animation-direction: alternate;
+}
+@keyframes lefttoright {
+  0% {left: -100%;opacity: 0;}
+    100%  {left: 100%;transform: translateX(-100%);,opacity: 1;}
+}
+@keyframes righttoleft {
+  0% {right: -200%;opacity: 0;}
+    100%  {left: 0%;transform: translateX(-100%);,opacity: 1;}
+}
