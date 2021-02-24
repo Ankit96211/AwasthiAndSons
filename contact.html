@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css" integrity="sha512-sopmFEmRVsWt542K+yzH3FQ1KJfdosOJG+bGLs9ZJT07b/3gUxRA9ICuJg2JtoZ9WeknAUuwJ0ggnmrV1YL6kQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Awasthi And Sons</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+</head>
+
+<body style=" background-color: ; ">
+
+<nav class="navbar navbar-dark navbar-expand-md fixed-top shadow">
+                    <div class="container-fluid ">
+                        
+                        <a class=" d-md-none navbar-brand" href="/"><img class="logo" src='./assets/images/logo.png' height="40"  alt='logo' /></a>
+                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                        <div id="Navbar" class="collapse navbar-collapse justify-content-between text-center">
+                            <ul class="navbar-nav ml-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link onhover-bb onhover-yellow raleway text-yellow-hover" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link onhover-bb onhover-yellow raleway text-yellow-hover" href="./services.html">Services</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link onhover-bb onhover-yellow raleway text-yellow-hover" href="./workshops.html">OnSpot Mechanic</a>
+                            </li>
+                            </ul>
+                             <a class="mx-5 d-none d-md-block navbar-brand" href="./"><img class="logo" src='./assets/images/logo.png' height="80"  alt='logo' /></a>
+                        
+                            <ul class="navbar-nav mr-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link onhover-bb onhover-yellow raleway text-yellow-hover"  href="./faqs.html">About</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link onhover-bb onhover-yellow raleway text-yellow-hover"  href="./contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link onhover-bb onhover-yellow raleway text-yellow-hover" href="./sponsors.html">FAQs</a>
+                            </li>
+                            </ul>
+
+                
+                        </div>
+                    
+                    </div>
+                
+                </nav>
+<div class="modal fade select-modal "  id="selectbrandmodal" tabindex="-1" role="dialog" aria-labelledby="selectbrandmodalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-blue text-yellow-light">
+        <h4 class="modal-title poppins" id="selectbrandmodalLabel">Select Brand</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body overflow-auto">
+        <div class="row px-2" id="brand-row">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div class="modal fade select-modal "  id="selectcarmodal" tabindex="-1" role="dialog" aria-labelledby="selectcarmodalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content text-center">
+      <div class="modal-header bg-blue text-yellow-light ">
+        <h4 class="modal-title poppins" id="selectcarmodalLabel">Select Car Model</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body overflow-auto">
+        <div class="row px-2" id="car-row">
+        </div>
+      
+      </div>
+      <button id="selectmodalback" class="btn-sm w-50 h-center btn-yellow-alt  rounded-pill poppins shadow">Back <i class="fa fa-arrow-circle-left"></i></button>
+    </div>
+  </div>
+</div>
+<header class="jumbotron">
+                    <div class="container">
+                        <div class="row p-0 m-0">
+                            <div class="col-12 col-sm-8 col-md-6 text-center text-sm-left">
+                                <h1 class="text-yellow">Awasthi And Sons</h1>
+                                <h3 class="text-capitalize">We Assure you best service</h3>
+                                
+                                <div class="row pt-2  w-sm-75 ">
+                                  <div class="col-12 col-sm-6">
+                                    <div id="car-brand" data-toggle="modal" data-target="#selectbrandmodal"  class="btn rounded-pill custom-select select-header poppins shadow car-brand">Select Brand</div>
+                                  </div>
+                                  <div class="col-12 my-3 mt-sm-0 col-sm-6"><div id="car-model"  class="btn rounded-pill custom-select select-header poppins shadow car-model">Select Car</div>
+                                </div>
+                                <div class="col-12  mb-2"><button class="btn btn-yellow w-100 rounded-pill poppins shadow">View All Services  <i class="fa fa-gear"></i></button>
+                                </div>
+                                </div>
+                            
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-6 text-center">
+                                 <img class="img-fluid w-50" src="./assets/images/carrepair.png" alt="car repair"/>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+<div class="col-12  petgradient bottom-border"></div>
+                </header>
+
+<div class="container ">
+<div class="row row-content py-0 pb-4 shadow justify-content-center">
+  <div class="col-12 m-0 p-0  top-border"></div>
+<div class="col-12 mt-4 text-center">
+   <h1 class="text-center poppins font-weight-bold mb-2">Please <span class="text-blue-dark"> Contact </span> Us For Any Query </h1>
+</div>
+<div class="col-12 col-sm-10 col-md-8 col-lg-6 mt-2">
+  <form id="contact-form" class="hh-form " action="https://formspree.io/f/xdopynly" method="POST">
+        
+        <div class="form-group row mb-5 hh-row">
+          <div class="col-2 col-sm-1 icon-col"><i class="v-center fa fa-lg fa-user prefix grey-text "></i>*</div>
+          <div class="col-10 col-sm-11 "> 
+          <input placeholder="Enter Your Name" required="" type="text" name="name" class="form-control validate"/>
+          </div>
+          
+        </div>
+        <div class="form-group row mb-5 hh-row">
+          <div class="col-2 col-sm-1 icon-col"><i class="v-center fa fa-lg fa-envelope prefix grey-text "></i></div>
+          <div class="col-10 col-sm-11 "> <input required="" placeholder="Enter Email Address" type="email" name="_replyto" class="form-control validate "/>
+          </div>
+          
+        </div>
+        <div class="form-group row mb-5 hh-row">
+          <div class="col-2 col-sm-1 icon-col"><i class="v-center fa fa-lg fa-phone-alt prefix grey-text "></i></div>
+          <div class="col-10 col-sm-11 "> <input required="" placeholder="Enter Phone Number" type="text" name="phone" class="form-control validate "/>
+          </div>
+          
+        </div>
+        <div class="form-group row mb-5 hh-row">
+          <div class="col-2 col-sm-1 icon-col"><i class="v-center fa fa-lg fa-info-circle prefix grey-text "></i></div>
+          <div class=" col-10 col-sm-11 text-left">
+            <label for="message" >Write Your Query Here ?</label>  
+            <textarea rows="5" class="form-control validate" name="message"></textarea>
+          </div>
+          
+        </div>
+        <div class="text-center mt-4">
+          <Button class="btn btn-yellow-alt raleway shadow w-100 rounded-pill">Submit <i class="fa fa-arrow-circle-right"></i></Button>
+        </div>
+      </form>
+      <div id="status" class="circle-loader v-center h-center d-none">
+  <div class="checkmark draw"></div>
+</div>
+</div>
+<div class="col-12 col-md-4">
+  <img src="./assets/images/contact.jpg" class="img-fluid d-inline-block my-2">
+  <img src="./assets/images/contact-alt.jpg" class="img-fluid d-none my-2 d-md-inline-block">
+</div>
+</div>
+
+
+</div>
+
+
+<footer  class="footer ">
+  <div class="bg-yellow ">
+    <div class="container">
+      <div class="row py-4 d-flex align-items-center">
+
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0">Keep yourself updated by connecting with us!</h6>
+        </div>
+  
+        <div  class="col-md-6 col-lg-7 text-center text-md-right">
+
+          
+          <a class="btn btn-social-icon btn-facebook mx-2">
+            <i  class="fab fa-facebook-f  "> </i>
+          </a>
+          <a class="btn btn-social-icon btn-twitter mx-2">
+            <i class="fab fa-twitter "> </i>
+          </a>
+          <a class="btn btn-social-icon btn-linkedin mx-2">
+            <i class="fab fa-linkedin "> </i>
+          </a>
+          <a class="btn btn-social-icon btn-instagram mx-2">
+            <i class="fab fa-instagram "> </i>
+          </a>
+          <a class="btn btn-social-icon btn-github mx-2">
+            <i class="fab fa-github "> </i>
+          </a>
+          <a class="btn btn-social-icon btn-whatsapp mx-2">
+            <i class="fab fa-whatsapp "> </i>
+          </a>
+          <a class="btn btn-social-icon btn-telegram mx-2">
+            <i class="fab fa-telegram "> </i>
+          </a>
+          <a class="btn btn-social-icon btn-discord mx-2">
+            <i class="fab fa-discord "> </i>
+          </a>
+
+        </div>
+       
+      </div>
+
+    </div>
+  </div>
+  <a href='https://www.freepik.com/vectors/car'>Car vector created by pch.vector - www.freepik.com</a>
+ </footer>
+
+</body>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+     <!-- build:js js/main.js -->
+     <script src="node_modules/jquery/dist/jquery.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="js/scripts.js"></script>
+<script type="text/javascript">
+</script>
+</html>
