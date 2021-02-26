@@ -1,5 +1,122 @@
 $(document).ready(function(){
+var familymembers=1;
+$('#general-submit').click(function(){
+	var uname=$("input[name=uname]").val();
+	var ugender=$("input[name=ugender]").val();
+	var uphone=$("input[name=uphone]").val();
+	var uemail=$("input[name=uemail]").val();
+	var ucity=$("input[name=ucity]").val();
+	   var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+       //alert(this.responseText);
+      }
+    };
+    var url="generalinfosubmit.php?uname="+uname+"&uphone="+uphone+"&uemail="+uemail+"&ugender="+ugender+"&ucity="+ucity;
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+	//alert();
+});
+$('#famiydetail-submit').click(function(){
+     var selfname="";
+     var partnername="";
+     var fathername="";
+     var mothername="";
+     var child1name="";
+     var child2name="";
+     var child3name="";
+   
+     var selfdob="";
+     var partnerdob="";
+     var fatherdob="";
+     var motherdob="";
+     var child1dob="";
+     var child2dob="";
+     var child3dob="";
+     
+     var child1gender="";
+     var child2gender="";
+     var child3gender="";
 
+     switch(familymembers){
+     	case 1:
+     	selfname=$("#me input[name=selfname]").val();
+     	selfdob=$("#me input[name=selfdob]").val();
+ 
+     	break;
+
+     	case 2:
+     	selfname=$("#v-pills-partner input[name=selfname]").val();
+     	selfdob=$("#v-pills-partner input[name=selfdob]").val();
+     	partnername=$("#v-pills-partner input[name=partnername]").val();
+     	partnerdob=$("#v-pills-partner input[name=partnerdob]").val();
+     	
+     	break;
+
+     	case 3:
+        selfname=$("#v-pills-child input[name=selfname]").val();
+     	selfdob=$("#v-pills-child input[name=selfdob]").val();
+     	partnername=$("#v-pills-child input[name=partnername]").val();
+     	partnerdob=$("#v-pills-child input[name=partnerdob]").val();
+     	child1name=$("#v-pills-child input[name=child1-name]").val();
+     	child1dob=$("#v-pills-child input[name=child1-dob]").val();
+     	child1gender=$("#v-pills-child input[name=child1-gender]").val();
+     	break;
+     	case 4:
+     	selfname=$("#v-pills-children input[name=selfname]").val();
+     	selfdob=$("#v-pills-children input[name=selfdob]").val();
+     	partnername=$("#v-pills-children input[name=partnername]").val();
+     	partnerdob=$("#v-pills-children input[name=partnerdob]").val();
+     	child1name=$("#v-pills-children input[name=child1-name]").val();
+     	child1dob=$("#v-pills-children input[name=child1-dob]").val();
+     	child1gender=$("#v-pills-children input[name=child1-gender]").val();
+     	child2name=$("#v-pills-children input[name=child2-name]").val();
+     	child2dob=$("#v-pills-children input[name=child2-dob]").val();
+     	child2gender=$("#v-pills-children input[name=child2-gender]").val();
+     	child3name=$("#v-pills-children input[name=child3-name]").val();
+     	child3dob=$("#v-pills-children input[name=child3-dob]").val();
+     	child3gender=$("#v-pills-children input[name=child3-gender]").val();
+     	break;
+     	case 5:
+        fathername=$("#v-pills-parents input[name=fathername]").val();
+     	fatherdob=$("#v-pills-parents input[name=fatherdob]").val();
+     	mothername=$("#v-pills-parents input[name=mothername]").val();
+     	motherdob=$("#v-pills-parents input[name=motherdob]").val();
+     	break;
+     	case 6:
+     	selfname=$("#v-pills-others input[name=selfname]").val();
+     	selfdob=$("#v-pills-others input[name=selfdob]").val();
+     	othermembers=$("#v-pills-others input[name=othermember]").val();
+     	break;
+       }
+        
+	   var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+       //alert(this.responseText);
+      }
+    };
+    var url="familydetailssubmit.php?selfname="+selfname+"&selfdob="+selfdob+"&partnername="+partnername+"&partnerdob="+partnerdob+"&fathername="+fathername+"&fatherdob="+fatherdob+"&mothername="+mothername+"&motherdob="+motherdob+"&child1name="+child1name+"&child1dob="+child1dob+"&child1gender="+child1gender+"&child2name="+child2name+"&child2dob="+child2dob+"&child2gender="+child2gender+"&child3name="+child3name+"&child3dob="+child3dob+"&child3gender="+child3gender;
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+	//alert();
+});
+$('#message-submit').click(function(){
+	var message=$("textarea[name=message]").val();
+	   var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+      if(this.responseText=="1")
+      {
+      	$('.form-success').removeClass('d-none');
+      }
+      }
+    };
+    var url="messagesubmit.php?message="+message;
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+	//alert();
+});
 var current_fs, next_fs, previous_fs; //fieldsets
 var opacity;
 
@@ -66,23 +183,30 @@ return false;
 })
 
 $('#noofchildren').change(function(){
-	var n=this.value;
-	var tmp='';
-	for (var i = 1; i <= n; i++) {
-       tmp+= '<h5 class="font-italic text-blue m-2">Child '+i+'</h5><div  class="form-group row p-2 hh-row"><div class="col-2 col-sm-1 icon-col mb-2 mb-md-0"><i class="v-center fa fa-lg fa-user prefix grey-text "></i></div><div class="col-10 col-md-5 mb-2 mb-md-0"> <input placeholder="Enter Name" required="" type="text" name="child'+i+'-name" class="form-control validate"/></div><div class="w-100 d-md-none"></div><div class="col-2 col-sm-1 icon-col"><i class="v-center fa fa-lg fa-mercury prefix grey-text "></i></div><div class="col-10 col-md-5 "> <div class="radio-group v-center"><div class="radio p-1 mr-md-2" data-value="male"><img width="20" src="./assets/male.png">Male</div><div class="radio p-1 ml-md-2" data-value="female"><img width="20" src="./assets/female.png">Female</div><input type="hidden" name="child'+i+'-gender"> </div></div><div class="w-100 d-md-none"></div><div class="col-2 col-sm-1 icon-col"><i class="v-center fa fa-lg fa-birthday-cake prefix grey-text "></i></div><div class="col-10 col-md-5 "> <input class="form-control" type="date" value="2011-08-19" name="child'+i+'-dob"></div></div><hr class="w-100 bg-blue">'
+	var n=Number(this.value);
+	alert(n);
+
+	switch(n)
+	{
+		case 1:
+		$('.child1').removeClass('d-none');
+		break;
+		case 2:
+		$('.child1').removeClass('d-none');
+		$('.child2').removeClass('d-none');
+		break;
+		case 3:
+		$('.child1').removeClass('d-none');
+		$('.child2').removeClass('d-none');
+		$('.child3').removeClass('d-none');
+		break;
 	}
-	$('#children').html(tmp);
+	
 });
-$('.radio-group .radio').click(function(){
+$('.radio').click(function(){
      $(this).parent().find('input').val($(this).attr("data-value"));
 });
-$('#general-submit').click(function(){
-
-	var uname=$("input[name=uname]").val();
-	var ugender=$("input[name=ugender]").val();
-	var uphone=$("input[name=uphone]").val();
-	var uemail=$("input[name=uemail]").val();
-	var ucity=$("input[name=ucity]").val();
-	alert(uname+ugender+uphone+uemail+ucity);
+$('.family-members div a').click(function(){
+      familymembers=Number($(this).attr("data-value"));
 });
 });

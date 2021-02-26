@@ -10,32 +10,25 @@
   font-family: 'jack-frost';
   src:url('../fonts/jack-frost/jackfrost.otf');
 }
+body
+  {
+    margin-top: 120px;
+  }
 @media(min-width: 770px)
 {
-  .jumbotron
+  body
   {
-    margin-top: 80px;
+    margin-top: 100px;
   }
 .navbar
 {
     height: 80px;
 }
-.logo
+}
+.navbar .nav-link:hover
 {
-padding: 5px;
-transition: 0.5s;
-
+    color: #3542a0 !important;
 }
-.logo:hover
-{
-  transform: scale(1.2);
-}
-.w-lg-50
-{
-    width: 50% !important;
-}
-}
-
 .jumbotron {
 margin-top: 40px ;
     margin-left: 0px;
@@ -148,7 +141,7 @@ height: 300px;
   transition: 0.3s;
   font-weight: 600;
   font-size: 18px;
-  padding: 20px 20px !important;
+  padding: 10px;
 
 }
 .onhover-bb {
@@ -976,22 +969,15 @@ background-color: #606dbc;
 .grad {
         background-image: linear-gradient(120deg, #6172c9, #3542a0)
 }
-
 #tata-form {
     text-align: center;
-    position: relative;
     margin-top: 20px
 }
 
 #tata-form fieldset .form-card {
-    border: 0 none;
-    border-radius: 0px;
     box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
-    padding: 20px 40px 30px 40px;
-    box-sizing: border-box;
-    width: 94%;
-    margin: 0 3% 20px 3%;
-    position: relative
+    text-align: left;
+    color: #9E9E9E;
 }
 
 #tata-form fieldset {
@@ -999,7 +985,7 @@ background-color: #606dbc;
     border-radius: 0.5rem;
     box-sizing: border-box;
     width: 100%;
-    margin: 0;
+    margin-bottom: 10px;
     padding-bottom: 20px;
     position: relative
 }
@@ -1008,19 +994,17 @@ background-color: #606dbc;
     display: none
 }
 
-#tata-form fieldset .form-card {
-    text-align: left;
-    color: #9E9E9E
-}
-
-
 #tata-form .action-button-previous {
+    margin-top: 10px ;
     background: #616161;
     font-weight: bold;
-    color: white;
-    
+    color: white;    
 }
-
+#tata-form .action-button {
+   margin-top: 10px ;
+    font-weight: bold;
+    color: white;
+}
 select.list-dt {
     border: none;
     outline: 0;
@@ -1144,12 +1128,12 @@ transition: 0.3s;
 .family-members{
     list-style: none;
 }
-.family-members li a
+.family-members div a
 {
     border:1px solid #3542a0;
     color: #404040; 
 }
-.family-members li a:hover
+.family-members div a:hover
 {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
     background-color: #3542a0;
@@ -1165,7 +1149,7 @@ transition: 0.3s;
 }
 
 .form-left{
-    background-color: #3542a0;background-image: url('./assets/divider-alt.png');
+    background-color: #3542a0;background-image: url('../assets/divider-alt.png');
     background-repeat: no-repeat;
     background-size: 80px 100%;
     background-position: right;border-top-left-radius: 20px;border-bottom-left-radius: 20px;
@@ -1181,7 +1165,7 @@ transition: 0.3s;
   transform: translateX(-50%);
 }
 .form-left{
-     background-color: #3542a0;background-image: url('./assets/divider-horizontal.png');
+     background-color: #3542a0;background-image: url('../assets/divider-horizontal.png');
     background-position: top;
     background-size:  100% 80px;
 }
