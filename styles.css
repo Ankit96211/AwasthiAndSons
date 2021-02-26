@@ -1149,7 +1149,7 @@ transition: 0.3s;
 }
 
 .form-left{
-    background-color: #3542a0;background-image: url('../assets/divider-alt.png');
+    background-color: #3542a0;background-image: url('./assets/divider-alt.png');
     background-repeat: no-repeat;
     background-size: 80px 100%;
     background-position: right;border-top-left-radius: 20px;border-bottom-left-radius: 20px;
@@ -1165,7 +1165,7 @@ transition: 0.3s;
   transform: translateX(-50%);
 }
 .form-left{
-     background-color: #3542a0;background-image: url('../assets/divider-horizontal.png');
+     background-color: #3542a0;background-image: url('./assets/divider-horizontal.png');
     background-position: top;
     background-size:  100% 80px;
 }
